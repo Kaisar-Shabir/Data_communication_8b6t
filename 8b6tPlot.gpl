@@ -1,0 +1,14 @@
+# Gnuplot script file for plotting data in file "8b6tPlot.dat"
+# This file is called 8b6tPlot.gpl
+set terminal png font arial
+set title "Signal Mapping using 8b6t block coding"
+set autoscale
+set xlabel "Signal"
+set ylabel "DC Weight"
+set size ratio 0.25
+set tics font ",6"
+set xtics 0, 6
+set ytics -2, 1, 2
+set grid
+set output "8b6tPlot.png"
+plot "8b6tPlot.dat" t '8b6t Block Coding' with lines
